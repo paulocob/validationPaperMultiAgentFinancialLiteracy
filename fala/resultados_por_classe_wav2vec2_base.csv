@@ -1,0 +1,19 @@
+classe,precisao,revocacao,f1,suporte_teste
+Timor-Leste,1.000,0.973,0.986,75
+Cabo Verde,0.958,1.000,0.978,68
+Guiné-Bissau,0.947,1.000,0.973,18
+BR-Norte,1.000,0.917,0.957,24
+Galego,1.000,0.889,0.941,9
+Angola,0.945,0.920,0.932,75
+BR-Sudeste-RJ,0.929,0.915,0.922,71
+BR-Sul,0.932,0.907,0.919,75
+Estrangeiro,0.895,0.944,0.919,18
+BR-Sudeste-MG,0.923,0.889,0.906,27
+PT-Norte,1.000,0.800,0.889,10
+Moçambique,0.882,0.893,0.887,75
+BR-Nordeste,0.914,0.853,0.883,75
+São Tomé e Príncipe,0.900,0.857,0.878,21
+BR-CentroOeste,0.857,0.857,0.857,14
+BR-Sudeste-SP,0.788,0.893,0.838,75
+PT-Lisboa,0.600,0.857,0.706,7
+macro,0.910,0.904,0.904,737

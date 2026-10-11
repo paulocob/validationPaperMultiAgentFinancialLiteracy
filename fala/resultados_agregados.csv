@@ -1,0 +1,15 @@
+modelo,metrica,valor,observacao
+wav2vec2-base,acuracia,0.915,737 amostras de teste; execução única; IC 95% de Wilson [0.892; 0.933]
+wav2vec2-base,f1_macro,0.904,execução única
+wav2vec2-base,f1_ponderado,0.914,execução única
+wav2vec2-base,parametros,94.6M,90.4M treináveis
+XLSR-53,acuracia,0.772,737 amostras de teste; execução única; IC 95% de Wilson [0.740; 0.801]
+XLSR-53,f1_macro,0.739,execução única
+XLSR-53,f1_ponderado,0.764,execução única
+XLSR-53,parametros,315.7M,
+comparacao,mcnemar_chi2,83.845,p < 1e-6; razão de discordância 9.75:1
+comparacao,h_de_cohen,0.402,
+wav2vec2-base (5 sementes 42-46),acuracia_media,0.918,dp 0.013; mín 0.901; máx 0.927
+wav2vec2-base (5 sementes 42-46),f1_macro_medio,0.906,dp 0.011; mín 0.891; máx 0.917
+erros,total_erros,63,8.5% das 737 amostras; 57.1% entre variantes brasileiras; 25.4% entre variedades africanas; 17.5% entre continentes
+erros,africanas_timorenses_rotuladas_BR_ou_PT,1/332,0.3%

@@ -1,0 +1,48 @@
+# Configuração do classificador de variantes lusófonas por fala.
+# Transcrita da tese (versão extensa, cap. 7; versão enxuta, seção "Identificação de
+# Variantes Lusófonas por Fala"). O código de treino fica no repositório
+# sbrt2026-lusophone-variants, ainda não depositado (ver README.md desta pasta).
+taxonomia:
+  n_classes: 17
+  brasil: [BR-Sudeste-SP, BR-Sudeste-RJ, BR-Sudeste-MG, BR-Sul, BR-Nordeste, BR-Norte, BR-CentroOeste]
+  portugal: [PT-Lisboa, PT-Norte]          # PT-Outro removida (menos de 30 amostras)
+  africa: [Angola, Moçambique, Cabo Verde, Guiné-Bissau, São Tomé e Príncipe]
+  asia: [Timor-Leste]
+  outros: [Galego, Estrangeiro]
+dados:
+  common_voice:
+    versao: "25.0 (português)"
+    licenca: CC0-1.0
+    amostras_rotuladas: 5492
+    rotulagem: "12 regras regex sobre o campo livre 'accents', sem conferência manual"
+  telejornais:
+    fonte: "YouTube, emissoras públicas ou de referência nacional"
+    clipes: 4591
+    extracao: "yt-dlp -> WAV 16 kHz mono -> segmentos de 10 s sem sobreposição (descarte < 3 s) -> descarte RMS < -40 dB"
+    uso: "pesquisa não comercial; o áudio não é redistribuído"
+  bruto_total: 10083
+  balanceamento: "cap-and-floor: no máximo 500 e no mínimo 30 amostras por classe"
+  final: 4907
+  particao: {treino: 3434, validacao: 736, teste: 737, estratificada_por: classe, random_state: 42}
+  limitacoes: "sem disjunção por locutor nem por emissão de origem"
+modelo:
+  base: facebook/wav2vec2-base           # alternativa avaliada: XLSR-53 (315.7M)
+  encoder_convolucional: congelado
+  transformer: {camadas: 12, dim: 768, treinavel: true}
+  pooling: "média ponderada pela attention mask"
+  cabeca: "Linear(768->256) -> ReLU -> Dropout(0.3) -> Linear(256->18)"
+treino:
+  otimizador: {nome: AdamW, beta1: 0.9, beta2: 0.999, weight_decay: 0.01}
+  taxa_aprendizado: 2.0e-5
+  scheduler: "warmup linear (10%) + decaimento linear"
+  batch_size: {wav2vec2-base: 8, XLSR-53: 4}
+  epocas: 15
+  early_stopping_patience: 4             # não acionado
+  label_smoothing: 0.1
+  class_weights: "inverso da frequência; peso zero para classes ausentes no treino"
+  gradient_clipping_max_norm: 1.0
+  sementes: [42, 43, 44, 45, 46]
+  hardware: "Apple M4 Pro (MPS)"
+inferencia_no_sistema:
+  janela_s: 10
+  agregacao: "média das saídas softmax ponderada pela confiança"
