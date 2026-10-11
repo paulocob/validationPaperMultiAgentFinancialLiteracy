@@ -1,0 +1,11 @@
+categoria,indicador,brasil_tutor,angola_tutor,unidade,observacao
+eficacia,conclusao_missao1,88.9,90.9,percentual,40/45 vs 20/22; diferença -2.0 pp; IC 95% de Newcombe [-16.0; 17.7]; IC 90% [-13.7; 14.0]; Fisher p = 1.00; h = -0.07
+eficacia,ganho_normalizado_hake,0.51,0.52,razao,média de grupo; sem teste
+eficacia,motivacao,90,87,percentual do maximo Likert,média Likert; sem teste
+qualidade,satisfacao,4.7,4.5,escala 1 a 5,sem teste
+pedagogico,resolucao_duvidas,78,72,percentual do maximo Likert,média Likert; sem teste
+adaptacao,adequacao_cultural_percebida,82,85,percentual do maximo Likert,sem teste
+interacao,duracao_media_sessao,35,42,minutos,
+interacao,mensagens_por_sessao,37,44,contagem media,
+contexto,renda_informal_principal,31,67,percentual,Angola: 20/30 inscritos (os dois braços)
+contexto,acesso_internet_banking,89,43,percentual,Angola: 13/30 inscritos (os dois braços)

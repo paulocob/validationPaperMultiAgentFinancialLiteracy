@@ -1,0 +1,10 @@
+grupo_desfecho,desfecho,tutor,cartilha,n_tutor,n_cartilha,diferenca,ic95_inf,ic95_sup,p,p_holm,teste,observacao
+principal,pre_teste_percentual,42.0,40.8,45,12,,,,,,,média do grupo (% de acertos; 10 itens; alfa de Cronbach = 0.78)
+principal,pos_teste_percentual,71.5,53.3,45,12,,,,,,,média do grupo (% de acertos)
+principal,ganho_conhecimento_pp,29.5,12.5,45,12,17.0,9.6,24.4,0.001,<0.005,Mann-Whitney (U = 102),p aproximado (aproximação normal sem correção de empates); IC da diferença entre médias
+principal,ganho_normalizado_hake,0.51,0.21,45,12,0.30,,,,,,sobre médias de grupo: g = 29.5/58.0 e 12.5/59.2
+principal,satisfacao_1a5,4.7,3.2,45,12,1.5,1.12,1.88,<0.001,<0.005,Mann-Whitney (U = 48),enunciados adaptados na cartilha: não comparável entre braços; g de Hedges = 2.49 [1.71; 3.27]
+exploratorio,conclusao_missao1,40/45 (88.9%),6/12 (50.0%),45,12,38.9,11.3,64.3,0.007,0.020,Fisher; IC de Newcombe,cartilha: concluinte = leitura finalizada + relatório entregue + sem dúvidas remanescentes
+exploratorio,conclusao_missao1_criterio_comum,40/45 (88.9%),12/12 (100%),45,12,-11.1,,,0.57,,Fisher,critério comum = relatório entregue; análise de sensibilidade fora da família de Holm
+exploratorio,motivacao_prop_media_ge4,40/45 (88.9%),7/12 (58.3%),45,12,30.6,5.0,57.7,0.026,0.052,Fisher; IC de Newcombe,proporção com média individual >= 4 na dimensão Likert
+exploratorio,resolucao_duvidas_prop_media_ge4,34/44 (77.3%),6/12 (50.0%),44,12,27.3,-1.2,53.8,0.081,0.081,Fisher; IC de Newcombe,denominador do tutor = participantes que submeteram perguntas; por intenção de tratar 34/45 (75.6%)
