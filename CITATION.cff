@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "Se usar estes artefatos, cite a tese e o artigo indicados abaixo."
+title: "Artefatos de validação e replicabilidade: Sistema Multi-Agente com IA Generativa e Aprendizado por Reforço Profundo para Educação Financeira Transcultural em Países Lusófonos"
+type: software
+authors:
+  - family-names: "Brito"
+    given-names: "Paulo César Oliveira"
+    affiliation: "Universidade Federal de Campina Grande"
+repository-code: "https://github.com/paulocob/validationPaperMultiAgentFinancialLiteracy"
+license: MIT
+keywords:
+  - financial education
+  - deep reinforcement learning
+  - multi-agent systems
+  - retrieval-augmented generation
+  - Lusophone countries
+preferred-citation:
+  type: conference-paper
+  title: "Multi-Agent System with Generative AI and Deep Reinforcement Learning for Adaptive Financial Education"
+  authors:
+    - family-names: "Brito"
+      given-names: "Paulo Cesar Oliveira"
+    - family-names: "Honório"
+      given-names: "Joaquim"
+    - family-names: "Moura"
+      given-names: "José Antão Beltrão"
+    - family-names: "Jones"
+      given-names: "Christian"
+    - family-names: "Terton"
+      given-names: "Uwe"
+  collection-title: "Proceedings of the 18th International Conference on Computer Supported Education (CSEDU 2026)"
+  volume: 2
+  start: 1313
+  end: 1324
+  publisher:
+    name: "SCITEPRESS"
+  year: 2026
+  doi: "10.5220/0015042800004021"

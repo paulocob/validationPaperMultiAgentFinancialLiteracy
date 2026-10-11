@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Segredos e configuração local
+.env
+.env.*
+*.pem
+*.key
+.mcp.json
+credentials*.json
+
+# Pesos e artefatos grandes (publicar em release ou no Zenodo)
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+*.pkl
+*.pickle
+models/
+checkpoints/
+rag/embeddings/ablation/
+fala/modelos/
+
+# Áudio (o repositório não redistribui áudio de terceiros nem de participantes)
+*.wav
+*.mp3
+*.ogg
+*.opus
+*.flac
+*.m4a
+
+# Saídas regeneráveis das execuções rápidas (--quick)
+**/resultados_quick.json
+**/RESULTADOS_quick.md
+**/figuras_quick/
+**/figuras/_antigas_*/
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Cópia local do repositório do classificador de variantes (não depositado aqui)
+sbrt2026-lusophone-variants/
+
+# Logs das execuções dos experimentos de fronteira
+experimentos_fronteira/resultados/logs/
