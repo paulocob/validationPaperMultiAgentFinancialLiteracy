@@ -1,0 +1,314 @@
+% Trecho dos apêndices C e D da versão extensa da tese (material_suplementar/apendices.tex).
+% Os rótulos (\label, \ref) remetem à versão extensa e não compilam isoladamente.
+
+\chapter{Estrutura das Missões Educacionais}
+\label{apendice:missoes}
+
+Este apêndice apresenta a estrutura detalhada das seis missões do sistema \textit{Jornada da Tranquilidade}, incluindo a classificação de cada fase e a distribuição de pontos. As seis missões são M1, Raio-X das Finanças (obrigatória); M2, Compra Inteligente (obrigatória); M3, Plano de Ação (obrigatória); M4, Plano de Emergência (condicional); M5, Renegociação de Dívidas (condicional); e M6, Pesquisa de Preços (complementar). Na Tabela~\ref{tab:missoes_completa}, as missões assinaladas com $\dagger$ --- M1, M2, M3 e M6 --- são aquelas cujas fases integram o espaço de ações $\mathcal{A}$ do agente de DRL, e correspondem a 17 tarefas. As demais, M4 e M5, ficam fora desse espaço: as suas 8 fases não são escolhidas pelo agente, mas geridas por regras condicionais de ativação.
+
+\begin{longtable}{cllc}
+\caption{Estrutura completa das missões e fases do sistema.} \label{tab:missoes_completa} \\
+\hline
+\textbf{Missão} & \textbf{Fase} & \textbf{Tipo} & \textbf{Pontos} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Missão} & \textbf{Fase} & \textbf{Tipo} & \textbf{Pontos} \\
+\hline
+\endhead
+\hline
+\endfoot
+M1$^{\dagger}$ & Introdução ao Orçamento & Reflexão & 25 \\
+   & Listar Custos Fixos & Ação & 75 \\
+   & Listar Gastos Variáveis & Ação & 75 \\
+   & Informar Receitas & Ação & 75 \\
+   & Reflexão sobre o Resultado & Reflexão & 25 \\
+\hline
+   & \textbf{Subtotal M1} & & \textbf{275} \\
+\hline
+M2$^{\dagger}$ & Necessidade vs.\ Desejo & Reflexão & 25 \\
+   & Poupar vs.\ Parcelar & Reflexão & 25 \\
+\hline
+   & \textbf{Subtotal M2} & & \textbf{50} \\
+\hline
+M3$^{\dagger}$ & Introdução ao Plano de Ação & Reflexão & 25 \\
+   & Definir O QUÊ e POR QUÊ & Ação & 75 \\
+   & Definir QUEM, QUANDO, QUANTO & Ação & 75 \\
+   & Definir COMO & Ação & 75 \\
+   & Reflexão sobre o Plano & Reflexão & 25 \\
+\hline
+   & \textbf{Subtotal M3} & & \textbf{275} \\
+\hline
+M4 & Mapear Todas as Dívidas & Ação & 75 \\
+   & Estratégia de Unificação & Reflexão & 25 \\
+   & Ações Recomendadas & Reflexão & 25 \\
+\hline
+   & \textbf{Subtotal M4} & & \textbf{125} \\
+\hline
+M5 & Introdução à Renegociação & Reflexão & 25 \\
+   & Mapear Credores e Dívidas & Ação & 75 \\
+   & Contato e Negociação & Ação & 75 \\
+   & Comprovante da 1\textordfeminine{} Parcela & Ação & 75 \\
+   & Reflexão sobre o Compromisso & Reflexão & 25 \\
+\hline
+   & \textbf{Subtotal M5} & & \textbf{275} \\
+\hline
+M6$^{\dagger}$ & Introdução à Pesquisa de Preços & Reflexão & 25 \\
+   & Pesquisar Preço & Ação & 75 \\
+   & Compartilhar com a Comunidade & Ação & 75 \\
+   & Buscar Preços da Comunidade & Ação & 75 \\
+   & Reflexão sobre Economia & Reflexão & 25 \\
+\hline
+   & \textbf{Subtotal M6} & & \textbf{275} \\
+\hline
+   & \textbf{Total Geral} & & \textbf{1.275\footnotemark} \\
+\end{longtable}
+
+\footnotetext{Pontuação máxima considerando todas as missões (obrigatórias + condicionais + complementar).}
+
+\noindent{\footnotesize $^{\dagger}$Missão cujas fases integram o espaço de ações $\mathcal{A}$ do agente de DRL.\par
+Fonte: elaborado pelo autor.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Variantes Culturais das Missões Educacionais}
+\label{apendice:variantes}
+
+Este apêndice documenta as variantes culturais das seis missões cuja estrutura consta do Apêndice~\ref{apendice:missoes}. A necessidade dele decorre de uma afirmação que percorre o documento: a de que não basta traduzir termos financeiros, sendo preciso reformular missões inteiras para refletir práticas locais. Até aqui essa afirmação foi enunciada, e a estrutura das missões foi apresentada em um único conjunto, redigido para o contexto brasileiro. Enunciar, porém, não é demonstrar: sem as variantes escritas lado a lado, a afirmação não é verificável, e a objeção previsível (``isso não é o mesmo material com a moeda trocada?'') fica sem resposta. O propósito deste apêndice é tornar a afirmação auditável, inclusive nos casos em que o resultado da auditoria a contraria.
+
+A documentação segue dois arcabouços consolidados de adaptação cultural de intervenções, transpostos da saúde pública para a educação financeira. O primeiro é a distinção de Resnicow et al.~\cite{resnicow1999} entre estrutura de superfície e estrutura profunda: a estrutura de superfície consiste em fazer materiais e mensagens corresponderem a características observáveis da população-alvo (pessoas, lugares, linguagem, alimentos, vestuário), ao passo que a estrutura profunda consiste em incorporar as forças culturais, sociais, históricas, ambientais e psicológicas que influenciam o comportamento visado. O critério que separa as duas é explícito nos próprios autores: a superfície aumenta a receptividade e a aceitação das mensagens, ao passo que é a profundidade que confere saliência. Griffith et al.~\cite{griffith2023} revisitam o modelo duas décadas depois e passam a tratar como questão empírica, e não como pressuposto, quando o ajuste cultural é benéfico e quando é desnecessário; a classificação adotada aqui herda essa cautela. O segundo arcabouço é o Modelo de Validade Ecológica de Bernal, Bonilla e Bellido~\cite{bernal1995}, cujas oito dimensões (linguagem, pessoas, metáforas, conteúdo, conceitos, objetivos, métodos e contexto) fornecem a grade de documentação; O'Connor et al.~\cite{oconnor2020} demonstram seu emprego como protocolo operacional de adaptação, e não apenas como taxonomia descritiva.
+
+A escolha desses arcabouços tem uma consequência imediata: eles não permitem que o próprio trabalho decida o seu veredito. Das oito dimensões do modelo de Bernal, apenas a linguagem (e, em parte, as pessoas) é alcançada por tradução. Se as variantes documentadas a seguir divergirem nas oito dimensões, a afirmação central está demonstrada; se divergirem apenas em linguagem, moeda e nomes de instituições, ela está refutada por este mesmo apêndice. O resultado, adiantado aqui e detalhado na seção final, é misto: cinco das seis missões têm variante angolana que altera conceitos, objetivos e métodos, e classificam-se como adaptação de estrutura profunda; as seis variantes portuguesas e a variante angolana da M6 alteram conteúdo e linguagem sem alterar o modelo causal da missão, e classificam-se como adaptação de superfície. A literatura de localização em processamento de linguagem natural reencena o mesmo ponto em domínio quantitativo: Azime et al.~\cite{azime2025} mostram que \textit{benchmarks} obtidos por tradução podem obscurecer a capacidade real dos modelos sob contextos socioculturais apropriados.
+
+\section*{Estatuto das variantes: desenho proposto e desenho aplicado}
+
+As variantes aqui documentadas correspondem ao desenho das missões. Nem todas foram aplicadas em campo, e a distinção é registrada missão a missão, porque confundi-las seria atribuir a um piloto conclusões que ele não sustenta.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil: variante de referência, aplicada.} É a versão original das missões, aplicada no piloto brasileiro descrito no Capítulo~\ref{cap:resultados_preliminares}, com 45 participantes no grupo experimental. Por ser o desenho de origem, não recebe classificação de nível: os níveis de Resnicow qualificam adaptações, e é contra a variante brasileira que as demais são classificadas.
+
+\item[(b)] \textbf{Angola: aplicada.} O piloto angolano foi efetivamente conduzido, com 30 participantes de Luanda e Benguela. Duas ressalvas limitam o que isso autoriza a afirmar. A primeira é que a taxa de conclusão de missões reportada para o conjunto angolano, de 80\%, não está desagregada por missão no documento, de modo que não é possível afirmar, missão a missão, quantos aprendizes percorreram cada variante. A segunda é que o único registro de sessão angolana reproduzido neste documento é o excerto da M6 constante do Apêndice~\ref{apendice:exemplos_interacoes}. As variantes angolanas foram, portanto, aplicadas; a evidência documental de aplicação, missão a missão, é parcial.
+
+\item[(c)] \textbf{Portugal: proposta, não aplicada.} Não houve piloto em Portugal, e nenhum aprendiz português interagiu com o sistema. A cobertura do contexto português deu-se por \textit{corpus}: os 333 pares pergunta-resposta do subconjunto português do corpus de avaliação transcultural, dos quais o Apêndice~\ref{apendice:exemplos_interacoes} reproduz um exemplar. Em consequência, tudo o que este apêndice afirma sobre a variante portuguesa é afirmação sobre desenho proposto e sobre conteúdo de \textit{corpus}, jamais sobre efeito observado em aprendizes.
+\end{enumerate}
+
+Quanto ao procedimento, o trabalho situa-se no arcabouço de estágios de Barrera e Castro~\cite{barrera2006,barrera2013}: a coleta de informação e o desenho preliminar estão realizados, os testes preliminares correspondem aos pilotos do Brasil e de Angola, o refinamento está em curso e o ensaio final não foi conduzido. Esse posicionamento importa porque nenhuma variante deste apêndice foi submetida a comparação entre versão adaptada e versão não adaptada da mesma missão. A magnitude que se pode esperar dessa comparação, quando ela for feita, não deve ser inflada: Hall et al.~\cite{hall2016} reportam $g = 0{,}52$ para intervenções culturalmente adaptadas contra versões não adaptadas da mesma intervenção, mas o valor pertinente ao caso da educação financeira, que é preventiva e não terapêutica, é o de prevenção, $g = 0{,}25$. A justificativa \textit{a priori} para adaptar, por sua vez, tem apoio empírico: Griner e Smith~\cite{griner2006} registram que intervenções dirigidas a um grupo cultural específico foram quatro vezes mais efetivas do que intervenções para grupos de origens variadas, e que intervenções conduzidas na língua nativa dos participantes foram duas vezes mais efetivas; e Kaiser e Menkhoff~\cite{kaiser2017wber}, em meta-análise de 126 avaliações de impacto, mostram que a educação financeira padrão é \emph{menos} efetiva em populações de baixa renda e em países de renda baixa e média-baixa. Ou seja, funciona pior exatamente onde o sistema pretende atuar.
+
+As fontes oficiais e regulatórias empregadas neste apêndice são identificadas pela instituição, pelo documento e pela data, tal como apuradas na verificação factual que o subsidiou. Onde essa verificação não localizou fonte, a lacuna está declarada e a variante foi escrita sem o dado: é o caso da prevalência quantitativa da \textit{kixikila}, do impacto orçamentário do \textit{alembamento} e da taxa de bancarização angolana posterior à rodada de 2014 do \textit{Global Findex}~\cite{worldbank2022}.
+
+\section*{Síntese pelas oito dimensões do Modelo de Validade Ecológica}
+
+A Tabela~\ref{tab:variantes_evm} aplica as oito dimensões de Bernal, Bonilla e Bellido~\cite{bernal1995} ao sistema como um todo, antes do detalhamento por missão. A coluna final registra o nível de adaptação alcançado em cada dimensão, no sentido de Resnicow et al.~\cite{resnicow1999}, considerando o conjunto das variantes. Os dados de informalidade que sustentam a linha dos conceitos têm fontes distintas e datas distintas: os do Brasil provêm da PNAD Contínua do IBGE e referem-se ao 2º trimestre de 2026~\cite{ibge2026pnad}; os de Angola provêm do \textit{Inquérito ao Emprego em Angola} do INE-Angola e referem-se ao ano de 2024~\cite{ineangola2024emprego}, aí incluído o desagregado provincial de Benguela.
+
+{\footnotesize
+\setlength{\tabcolsep}{2pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{1.7cm}}
+\caption{Dimensões do Modelo de Validade Ecológica aplicadas às variantes nacionais do sistema.}
+\label{tab:variantes_evm} \\
+\hline
+\textbf{Dimensão} & \textbf{Brasil (referência)} & \textbf{Angola} & \textbf{Portugal} & \textbf{Nível} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Dimensão} & \textbf{Brasil (referência)} & \textbf{Angola} & \textbf{Portugal} & \textbf{Nível} \\
+\hline
+\endhead
+\hline
+\endfoot
+Linguagem & Português brasileiro; tratamento por ``você''; registro informal & Português de Angola; tratamento por ``senhor/senhora'' desde o primeiro turno; léxico kimbundu e umbundu (\textit{kixikila}, \textit{zunga}, \textit{candongueiro}) & Português europeu (\textit{telemóvel}, \textit{vencimento}, \textit{aforro}, \textit{prestação}) & Superfície \\
+\hline
+Pessoas & Assalariado ou autônomo urbano, com renda complementar informal & Trabalhadora do comércio de rua e de mercado; a \textit{kixikila} é praticada majoritariamente por mulheres~\cite{carlos2014kixikila} & Trabalhador por conta de outrem, com vencimento e subsídios & Superfície, com componente profunda em Angola \\
+\hline
+Metáforas & ``Raio-X'' do orçamento; ``bola de neve'' e ``avalanche'' para dívidas & A rotação e a ``vez'' de cada participante da \textit{kixikila} como imagem da poupança que amadurece em data conhecida & O ``prémio de permanência'' dos Certificados de Aforro como imagem da recompensa por esperar & Profunda em Angola; superfície em Portugal \\
+\hline
+Conteúdo & Pix, boleto, CDB, Tesouro Direto, crédito consignado, rotativo do cartão, renegociação por plataforma & STI da EMIS, rede Multicaixa, Multicaixa Express, USSD, pagamento por referência, depósito a prazo, microcrédito de sociedade autorizada pelo BNA, \textit{kixikila} & Multibanco, MB WAY, referência Multibanco, Certificados de Aforro, PPR, crédito à habitação, fatura com NIF & Profunda \\
+\hline
+Conceitos & Renda mensal predominantemente formal, com informalidade de 37,4\% dos ocupados~\cite{ibge2026pnad}; poupança individual & Renda diária e irregular, com informalidade de 79,8\% dos ocupados e de 83,9\% em Benguela~\cite{ineangola2024emprego}; poupança simultaneamente individual e coletiva, e simultaneamente poupança e crédito & Renda formal anualizada em catorze meses~\cite{ct2009}; passivo dominante de longo prazo & Profunda entre Brasil e Angola; superfície entre Brasil e Portugal \\
+\hline
+Objetivos & Sobra mensal e constituição de reserva de emergência & Cobertura dos dias sem venda; obtenção do montante indivisível na data da rotação; preservação de valor sob inflação de dois dígitos & Sobra mensal, amortização do crédito à habitação e otimização fiscal & Profunda entre Brasil e Angola; superfície entre Brasil e Portugal \\
+\hline
+Métodos & Levantamento mensal por rubricas; 5W1H; ordenação de dívidas por taxa de juro & Levantamento retrospectivo de sete dias; ordenação de obrigações pela natureza e pela consequência do incumprimento; instrução sensível ao canal disponível & 5W1H ancorado no calendário fiscal; mesma ordenação por taxa & Profunda entre Brasil e Angola; superfície entre Brasil e Portugal \\
+\hline
+Contexto & Ecossistema de crédito caro e amplamente bancarizado; conectividade estável & Bancarização de 29,3\%, única medição oficial disponível, de 2014~\cite{worldbank2022}; inflação homóloga de 12,42\% em março de 2026~\cite{ineangola2026ipcn}; conectividade intermitente, com 13\% dos participantes do piloto reportando queda de conexão & Crédito à habitação em cerca de três quartos do \textit{stock} de empréstimos a particulares~\cite{leitao2025} & Profunda \\
+\hline
+\end{longtable}}
+
+\noindent{\footnotesize Fonte: elaborado pelo autor. Dimensões conforme Bernal, Bonilla e Bellido~\cite{bernal1995}; níveis conforme Resnicow et al.~\cite{resnicow1999}.\par}
+
+\section*{M1 --- Raio-X das Finanças}
+
+\noindent\textbf{Objetivo invariante.} Construir o primeiro orçamento completo do aprendiz (receitas, despesas fixas e despesas variáveis) e produzir o saldo que condiciona a ativação das missões M4 e M5. As cinco fases da missão (Apêndice~\ref{apendice:missoes}) permanecem as mesmas nas três variantes; o que muda é a unidade de apuração e o conjunto de rubricas.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil (referência; aplicada).} Instrumentos e termos: salário, ``bico'', conta de luz e de água, internet, fatura do cartão, parcela de financiamento. A apuração é mensal, e a informalidade brasileira, de 37,4\% dos ocupados no 2º trimestre de 2026~\cite{ibge2026pnad}, é tratada como renda complementar sobre uma base salarial. Enunciado ao aprendiz, tal como registrado no piloto (Apêndice~\ref{apendice:exemplos_interacoes}): ``qual é a sua renda mensal? Pode incluir salário, bicos e qualquer outra fonte''.
+
+\item[(b)] \textbf{Angola (aplicada).} Instrumentos e termos: \textit{zunga} e comércio de mercado, \textit{candongueiro} (transporte colectivo informal que, em Luanda, substituiu largamente o transporte público estatal e, por extensão, o seu condutor~\cite{lopes2006candongueiros}), contribuição à \textit{kixikila} e contribuição ao Instituto Nacional de Segurança Social. O que muda de fato são quatro coisas. Primeira, a unidade de apuração: com informalidade de 79,8\% dos ocupados em 2024, de 83,9\% em Benguela e de 59,5\% em Luanda, e com 62,4\% dos empregados sob contrato verbal~\cite{ineangola2024emprego}, perguntar pela ``renda mensal'' pressupõe uma regularidade que a maioria dos aprendizes não tem; a missão passa a levantar os últimos sete dias e o número de dias em que houve venda. Segunda, a rubrica da \textit{kixikila}, que não é despesa nem sobra: sendo uma associação rotativa de poupança e crédito~\cite{carlos2014kixikila,ardener1964}, a contribuição é simultaneamente saída de caixa e acumulação, e classificá-la como despesa produziria diagnóstico falso. Terceira, a rubrica de deslocação diária em \textit{candongueiro}, que em orçamento de comércio de rua é despesa fixa disfarçada de variável. Quarta, a fase de reflexão incorpora a inflação: com variação homóloga de 12,42\% em março de 2026~\cite{ineangola2026ipcn}, guardar kwanza em espécie até o fim do mês tem custo, e a missão diz isso em lugar de recomendar acumulação indiferenciada. Contra a suposição de que ``Segurança Social'' seja designação exclusivamente portuguesa, Angola tem um Instituto Nacional de Segurança Social tutelado pelo Ministério da Administração Pública, Trabalho e Segurança Social, com regime geral de 3\% a cargo do trabalhador e 8\% a cargo do empregador e regime especial de 1,5\% mais 4\% para pescas, agricultura e vendedores ambulantes e de mercado~\cite{maptss2026inss}; isto é, para as próprias \textit{zungueiras}, o que faz da contribuição matéria de missão, e não nota de rodapé.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Vamos fazer o raio-X do dinheiro da senhora. Em vez de começar pelo mês inteiro, vamos pelos últimos sete dias: em quantos desses dias houve venda, e quanto entrou em cada um? Depois somamos o que sai todos os dias --- o candongueiro para ir e voltar do mercado, a comida --- e só então o que sai uma vez por mês. E há uma pergunta que não é despesa nem sobra: quanto a senhora entrega à kixikila neste ciclo, e quando é a sua vez de receber?''
+
+\item[(c)] \textbf{Portugal (proposta; não aplicada).} Instrumentos e termos: vencimento, subsídio de férias e subsídio de Natal, previstos nos artigos 263º e 264º do Código do Trabalho e imperativos, de que resultam catorze meses de salário por ano~\cite{ct2009}; prestação do crédito à habitação; MB WAY~\cite{sibs_mbway}; IRS. A mudança substantiva está na base anual da renda, que deixa de ser doze e passa a catorze meses; a fase de reflexão pergunta se o orçamento foi construído dividindo o ano por doze ou por catorze, questão inexistente no desenho brasileiro. A variante pergunta também se os subsídios são recebidos diluídos ao longo do ano ou em dois montantes; o diploma que rege o regime de duodécimos não foi confirmado na verificação que subsidiou este apêndice, e a variante trata a opção como circunstância declarada pelo aprendiz, e não como norma citada.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Vamos fazer o raio-X das suas contas. Primeiro, uma pergunta que muda todo o resto: recebe os subsídios de férias e de Natal diluídos ao longo do ano ou em dois montantes? Depois disso, listamos as despesas fixas --- e começo pela prestação da casa, se tiver.''
+\end{enumerate}
+
+\noindent\textbf{Classificação.} A variante \textbf{angolana é adaptação de estrutura profunda}: altera conceitos, porque a unidade de renda deixa de ser o salário mensal e passa ao fluxo diário de caixa; objetivos, porque a meta deixa de ser a sobra do mês e passa à cobertura dos dias sem venda; métodos, porque o levantamento passa a ser retrospectivo de sete dias em lugar de tabela mensal de rubricas; e contexto, pela informalidade mais que dobrada e pela inflação de dois dígitos. O pressuposto de horizonte de planejamento longo e renda previsível, que sustenta o desenho ocidental de orçamento, é falso aqui, e essa é precisamente a dimensão de percepção temporal que Parrish e Linder-VanBerschot~\cite{parrish2010} identificam como crítica em instrução multicultural. A simplificação do levantamento encontra apoio, ademais, no achado de Drexler, Fischer e Schoar~\cite{drexler2014} de que o treinamento por regras de bolso supera o treinamento contábil padrão entre participantes com menor escolaridade ou práticas iniciais mais frágeis; esse achado é de adaptação de \emph{método} ao público, e não de adaptação cultural em sentido étnico, e assim deve ser lido. A variante \textbf{portuguesa é adaptação de superfície}: substitui léxico e instrumentos e introduz uma correção de cálculo, que é anualizar por catorze, mas mantém o sujeito individual, a renda formal previsível, a unidade mensal e o objetivo de sobra. É mudança de conteúdo, com ajuste pontual de método, dentro de um conceito inalterado.
+
+\section*{M2 --- Compra Inteligente}
+
+\noindent\textbf{Objetivo invariante.} Levar o aprendiz a distinguir necessidade de desejo e a comparar o custo de antecipar consumo por crédito com o de esperar e acumular. É a missão mais curta do sistema, com duas fases de reflexão e nenhuma fase de ação.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil (referência; aplicada).} Instrumentos e termos: parcelamento sem juros no cartão, crediário, carnê e rotativo. O dado estrutural e estável (e não a taxa corrente, que oscila mês a mês) é o teto instituído pela Lei nº 14.690/2023 e regulamentado pela Resolução CMN nº 5.112/2023: juros e encargos do rotativo e do parcelamento da fatura não podem ultrapassar 100\% do valor original da dívida. O parcelamento sem juros é peculiaridade brasileira de grande peso pedagógico, porque o preço à vista e o preço parcelado costumam coincidir, embutindo o custo do crédito no preço; a verificação não localizou descrição normativa do banco central para esse mecanismo, e os dados de volume disponíveis provêm da associação setorial de cartões, o que recomenda tratá-lo qualitativamente.
+
+\noindent\textit{Enunciado ao aprendiz:} ``À vista sai R\$~1.200; em dez vezes `sem juros', R\$~120 por mês. Antes de decidir, faça uma pergunta na loja: qual é o preço se eu pagar à vista, agora?''
+
+A missão brasileira incorpora uma advertência: a maior avaliação experimental de educação financeira já conduzida no Brasil~\cite{bruhn2016} encontrou, ao lado de melhorias em poupança e orçamento, \emph{aumento} no uso de crédito caro para consumo. Educação financeira sem ajuste ao ecossistema de crédito local pode produzir efeito adverso, e a M2 é a missão em que esse risco se concentra.
+
+\item[(b)] \textbf{Angola (aplicada).} O que muda de fato é a própria alternativa ao crédito. A verificação não encontrou evidência de parcelamento sem juros em Angola, e a missão não pode transpor esse dilema; o crédito consignado brasileiro, por sua vez, não tem correspondente angolano, pois não há, entre os instrumentos verificados, crédito com desconto em folha. A alternativa efetivamente disponível é a \textit{kixikila}: acordo informal em que um grupo ligado por relações prévias de confiança contribui periodicamente com montante fixo para um fundo comum, atribuído ciclicamente a cada membro até que todos se tenham beneficiado, com ordem regulada por direito costumeiro e por estipulação das partes, e operando ``a custos baixos ou nulos''~\cite{carlos2014kixikila}. Essa é a razão econômica clássica das associações rotativas: viabilizar compras indivisíveis por acumulação coletiva~\cite{besley1994}, o que as distingue das associações acumulativas~\cite{bouman1995}. A segunda alternativa verificada é o microcrédito concedido por Sociedade de Microcrédito autorizada pelo Banco Nacional de Angola, com teto de Kz 2,5 milhões por cliente~\cite{bna_microcredito}. A missão ensina a distinção que protege o aprendiz: as sociedades de microcrédito são autorizadas e supervisionadas pelo BNA, ao passo que os operadores de microcrédito estão sujeitos apenas a registo, não a supervisão.
+
+\noindent\textit{Enunciado ao aprendiz:} ``A senhora quer o fogão. Há três caminhos, e eles não custam a mesma coisa. Um: esperar a sua vez na kixikila, que entrega o montante inteiro numa data que a senhora já sabe qual é, e sem juro. Dois: pedir microcrédito --- e aí pergunte primeiro se quem empresta é sociedade autorizada pelo BNA ou apenas um operador registado, porque não é a mesma proteção. Três: comprar aos poucos, com o dinheiro do dia. Vamos ver qual cabe no seu ciclo.''
+
+Duas cautelas integram o desenho da variante. A primeira: a missão não promete ganho de bem-estar pela participação em grupo de poupança, porque a avaliação randomizada de Karlan et al.~\cite{karlan2017} em três países africanos encontrou melhoria em resultados de negócio do domicílio e no empoderamento das mulheres, mas \emph{não} encontrou impacto sobre consumo médio. A segunda: a interpretação da associação rotativa como dispositivo de compromisso que protege a poupança de reivindicações intradomiciliares provém de evidência do Quênia~\cite{anderson2002}, e é aqui hipótese a testar em Angola, não fato transposto.
+
+\item[(c)] \textbf{Portugal (proposta; não aplicada).} Instrumentos e termos: crédito ao consumo, MB WAY~\cite{sibs_mbway} e Certificados de Aforro. O elemento pedagogicamente mais forte é o prémio de permanência dos Certificados de Aforro da Série F, crescente do 2º ao 15º ano, sobre taxa base indexada à Euribor a três meses e limitada por teto de 2,50\%~\cite{igcp_aforro}: é uma recompensa explícita e escalonada por esperar, que dá corpo material à segunda fase da missão. A taxa vigente muda todos os meses, e a variante não a cita.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Se comprar já, paga em prestações de crédito ao consumo. Se esperar, o dinheiro aplicado em Certificados de Aforro ganha prémio de permanência, que sobe com o tempo que lá ficar. A pergunta não é `quanto rende', é `quanto lhe custa não esperar'.''
+\end{enumerate}
+
+\noindent\textbf{Classificação.} A variante \textbf{angolana é adaptação de estrutura profunda}: o sujeito da decisão deixa de ser exclusivamente o indivíduo e passa a incluir o grupo; o objetivo deixa de ser evitar juro e passa a obter o montante indivisível em data previsível, a custo baixo ou nulo; o método deixa de ser a comparação de taxas e passa à leitura do ciclo de rotação e da obrigação de contribuir. Uma missão que se limitasse a mandar o aprendiz angolano ``comparar a taxa da poupança rotativa com a da caderneta'' estaria resolvendo o problema errado. A variante \textbf{portuguesa é adaptação de superfície}: substitui os instrumentos e melhora o exemplo, mas conserva integralmente o conceito (decisão individual entre antecipar e adiar consumo), o objetivo e o método comparativo do desenho brasileiro.
+
+\section*{M3 --- Plano de Ação}
+
+\noindent\textbf{Objetivo invariante.} Transformar um objetivo financeiro declarado em plano concreto pela metodologia 5W1H, distribuída pelas fases ``O QUÊ e POR QUÊ'', ``QUEM, QUANDO, QUANTO'' e ``COMO''.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil (referência; aplicada).} Objetivos típicos: reserva de emergência, quitação do cartão, compra de bem durável. O ``COMO'' nomeia instrumentos de acumulação com baixo valor de entrada, como o CDB e os títulos públicos de varejo do Tesouro Direto, cuja compra é fracionada a partir de 0,01 título, respeitado valor mínimo da ordem de R\$~30,00~\cite{tesourodireto}. O ``QUANDO'' pressupõe horizonte mensal e renda previsível.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Seu objetivo é juntar R\$~1.800 até dezembro. São seis meses: R\$~300 por mês. Onde esse dinheiro vai ficar guardado, para não se misturar ao do dia a dia?''
+
+\item[(b)] \textbf{Angola (aplicada).} Três das interrogações do 5W1H mudam de fato. O \emph{quem} admite sujeito coletivo: o plano pode ter como unidade o grupo de \textit{kixikila}, e não o indivíduo, com a ordem de recebimento fixada pelo costume e pela estipulação das partes~\cite{carlos2014kixikila}. Que a unidade de intervenção seja decisão de adaptação, e não detalhe de implementação, tem apoio experimental: Doi, McKenzie e Zia~\cite{doi2014} mostraram, na Indonésia, que treinar o migrante e o familiar em conjunto produz efeitos grandes sobre conhecimento, comportamento e poupança, ao passo que treinar apenas o migrante não produz efeito algum sobre os demais membros do domicílio. O \emph{quando} deixa de ser data escolhida livremente e passa a ancorar-se no ciclo de rotação, que é quando o montante estará efetivamente disponível. O \emph{quanto} passa a ser indexado ao bem, e não ao valor nominal: com inflação homóloga de dois dígitos~\cite{ineangola2026ipcn}, um plano expresso em kwanzas ao longo de doze meses erra o alvo, e a missão instrui a expressar a meta pelo bem pretendido e a encurtar o horizonte. O \emph{como} passa a depender do canal disponível, e a variante nomeia os canais verificados: transferência instantânea pelo Sistema de Transferências Instantâneas da EMIS, pagamento por referência com validade padrão de 72 horas~\cite{appypay2026referencia}, Multicaixa Express (que exige acesso à internet~\cite{multicaixa2026faq}) e USSD, que não o exige~\cite{accessbank2026ussd,atlantico2026ussd}. Objetivos de natureza familiar, como o \textit{alembamento}, aparecem na lista do aprendiz e são acolhidos pela missão como meta legítima; a literatura verificada descreve o rito~\cite{quijila2024alembamento}, mas não quantifica seu efeito orçamentário, e a missão não atribui valor nem percentual de renda comprometido.
+
+\noindent\textit{Enunciado ao aprendiz:} ``O seu objetivo é o fogão --- não são os 130.000 kwanzas, porque daqui a seis meses o fogão não custa 130.000. Então vamos escrever assim: o quê, o fogão; quando, no ciclo em que chegar a sua vez na kixikila; quanto, a contribuição do ciclo; como, e aqui preciso de saber uma coisa: quando não há internet, a senhora consegue usar o \texttt{*400\#} ou o \texttt{*477\#} do seu banco?''
+
+\item[(c)] \textbf{Portugal (proposta; não aplicada).} Objetivos típicos: amortização antecipada do crédito à habitação (passivo dominante, já que os empréstimos à habitação representam cerca de três quartos do \textit{stock} de empréstimos a particulares~\cite{leitao2025}) e reforço da poupança-reforma. O ``COMO'' incorpora o PPR e o seu enquadramento fiscal: dedução à coleta de IRS de 20\% dos valores aplicados no ano, com limites de 400 euros para sujeitos passivos com menos de 35 anos, 350 euros entre 35 e 50 anos e 300 euros acima de 50 anos, por sujeito passivo; e a missão registra a contrapartida, que é a parte útil para um plano: o reembolso fora das situações legalmente previstas anula o benefício, com majoração de 10\% por ano e tributação autónoma à taxa de 20\%~\cite{ebf21}. O ``QUANDO'' ancora-se no calendário fiscal e nos meses de recebimento dos subsídios.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Objetivo: amortizar capital do crédito à habitação. Quando: no mês em que receber o subsídio. Quanto: a dedução do PPR até ao limite do seu escalão etário liberta parte do IRS --- mas atenção, se levantar o PPR fora das situações previstas, devolve o benefício com majoração. Vamos escrever o plano já com essa restrição dentro.''
+\end{enumerate}
+
+\noindent\textbf{Classificação.} A variante \textbf{angolana é adaptação de estrutura profunda}: mudam o sujeito do plano, que é dimensão de conceitos; a definição da meta e do horizonte, que é dimensão de objetivos; e a seleção do canal de execução sob conectividade intermitente, que reúne métodos e contexto. A variante \textbf{portuguesa é adaptação de superfície}, ainda que com substituição de conteúdo particularmente densa: o sujeito continua individual, o horizonte continua longo e previsível e a sequência 5W1H continua íntegra; o que se acrescenta é um calendário fiscal e um conjunto de instrumentos, dentro de um modelo causal inalterado.
+
+\section*{M4 --- Plano de Emergência}
+
+\noindent\textbf{Objetivo invariante.} Missão condicional, ativada quando as despesas apuradas na M1 excedem as receitas. Mapear todas as dívidas, escolher uma estratégia de ordenação e derivar as ações recomendadas.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil (referência; aplicada).} Instrumentos e termos: rotativo do cartão, crediário, crédito consignado (com margem consignável de 35\% para o empréstimo pessoal, acrescida de 5\% para cartão de crédito consignado e de 5\% para cartão consignado de benefício~\cite{previdencia2025consignado}), financiamento de veículo e negativação. As estratégias Avalanche, que ataca primeiro a maior taxa, e Bola de Neve, que ataca primeiro o menor saldo, funcionam porque as taxas diferem em ordens de magnitude entre modalidades. A missão incorpora ainda o prazo do artigo 43, §~1º, da Lei nº 8.078/1990, segundo o qual os cadastros de inadimplentes não podem conter informações negativas por período superior a cinco anos, contado do vencimento da dívida. Não se citam taxas correntes: o teto do consignado é fixado por resolução do Conselho Nacional de Previdência e revisto com frequência quase mensal, de modo que a variante remete à resolução vigente em lugar de fixar número.
+
+\item[(b)] \textbf{Angola (aplicada).} O que muda de fato é o critério de ordenação. As obrigações verificadas no contexto angolano não são todas remuneradas por taxa: a contribuição à \textit{kixikila} é compromisso periódico de valor fixo, a custo baixo ou nulo, garantido por confiança e laços sociais e não por instrumento jurídico, e o seu incumprimento tem consequência social (pode quebrar o grupo), e não consequência de taxa~\cite{carlos2014kixikila}; o microcrédito, por sua vez, tem custo monetário e regime distinto conforme a entidade credora seja sociedade autorizada ou operador apenas registado~\cite{bna_microcredito}. Ordenar essas obrigações por taxa de juro, como manda a estratégia Avalanche, é aplicar um critério que só discrimina parte do passivo. A variante substitui o critério por duas perguntas: qual obrigação tem custo monetário crescente, e qual obrigação, se descumprida, tem consequência irreversível sobre a rede que sustenta a renda do aprendiz. A variante também não transpõe a negativação: não há, entre os instrumentos verificados, cadastro angolano de restrição com a função do brasileiro, e a missão não afirma que exista.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Vamos pôr no papel tudo o que a senhora deve, mas em duas listas, não numa. Na primeira, o que cresce se atrasar --- o microcrédito, por exemplo. Na segunda, o que não cresce mas não se pode falhar, como a sua contribuição do ciclo, porque falhar ali fecha uma porta que não se reabre. A ordem de pagamento sai da comparação entre as duas listas.''
+
+Esta é a variante angolana com base empírica mais frágil das seis, e o registro é deliberado: a verificação não localizou fonte oficial acessível sobre a composição do endividamento das famílias angolanas, de modo que a reformulação aqui documentada é de desenho, apoiada nas propriedades verificadas de cada instrumento, e não em distribuição observada de passivos.
+
+\item[(c)] \textbf{Portugal (proposta; não aplicada).} Instrumentos e termos: prestação do crédito à habitação, crédito ao consumo e indexação à Euribor. A dimensão do problema é conhecida: em maio de 2026 o \textit{stock} de empréstimos a particulares era de 150,8 mil milhões de euros, dos quais 115,7 mil milhões em habitação e 35,1 mil milhões em consumo e outros fins~\cite{leitao2025}. As estratégias Avalanche e Bola de Neve são mantidas sem alteração; o que muda é a lista de dívidas e o fato de a prestação indexada variar com o indexante. A missão pergunta pela taxa de cada contrato, em vez de afirmar qual é a mais alta.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Liste todos os créditos, com a prestação e a taxa de cada um. Depois responda: qual deles tem a taxa mais alta? É por esse que começamos, e não pelo maior valor em dívida.''
+\end{enumerate}
+
+\noindent\textbf{Classificação.} A variante \textbf{angolana é adaptação de estrutura profunda no desenho}, por alterar conceitos, isto é, o que conta como obrigação, e objetivos, já que o critério de prioridade deixa de ser a taxa e passa à natureza e à consequência do incumprimento; o veredito é, porém, provisório, porque falta base observacional sobre a composição do passivo das famílias angolanas. A variante \textbf{portuguesa é adaptação de superfície}: as duas estratégias, o sujeito individual e o critério de taxa permanecem, e mudam apenas os instrumentos nomeados e o indexante.
+
+\section*{M5 --- Renegociação de Dívidas}
+
+\noindent\textbf{Objetivo invariante.} Missão condicional e a única do sistema que exige ação verificável no mundo real: contactar credores, obter acordo e enviar comprovante do pagamento da primeira parcela, em alinhamento com a aprendizagem experiencial~\cite{kolb1984}.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil (referência; aplicada).} A missão apoia-se em infraestrutura institucional densa: plataformas privadas de renegociação com consulta e negociação gratuitas e programas públicos de renegociação em larga escala. A edição do Desenrola Brasil encerrada em 2024 beneficiou mais de 15 milhões de pessoas, e a edição de 2026 registrou 1.070.292 operações contratadas e R\$~17,8 bilhões em volume financeiro, segundo o Ministério da Fazenda. O comprovante da primeira parcela é tipicamente um boleto pago, instrumento padronizado nos termos da Circular BCB nº 3.598/2012~\cite{bcb2012boleto}, ou um Pix~\cite{bcb2020pix}. A exclusão do registro negativo após o pagamento ocorre em prazo curto, e é esse o incentivo que a missão explora. Não se reportam aqui os totais de inadimplentes divulgados por empresas privadas de renegociação: os valores disponíveis são mutuamente incoerentes e não constituem estatística oficial.
+
+\item[(b)] \textbf{Angola (aplicada).} Aqui muda a arquitetura inteira da missão, porque três dos seus pressupostos brasileiros não se verificam. Primeiro, o objetivo: ``limpar o nome'' pressupõe cadastro de restrição, que a verificação não encontrou em Angola, e a meta passa a ser restabelecer o acordo com o credor e comprová-lo. Segundo, não há programa público de renegociação em massa verificado, de modo que a fase de contato é negociação direta, sem intermediário institucional. Terceiro, e mais consequente, o instrumento de pagamento: o correspondente angolano do boleto é o pagamento por referência, composto por entidade, referência e montante, com validade padrão de 72 horas na modalidade de valor fixo~\cite{appypay2026referencia}. Essa janela é matéria de missão, e não detalhe operacional: o acordo tem de ser honrado dentro dela, e a fase ``Comprovante da 1ª Parcela'' deixa de ser ``envie quando puder'' e passa a ter prazo. Some-se a camada de canal: o Multicaixa Express exige acesso à internet~\cite{multicaixa2026faq}, ao passo que o USSD dos bancos e das operadoras funciona sem internet e sem saldo, dependendo, porém, da operadora, já que os serviços verificados exigem número registado na Unitel~\cite{accessbank2026ussd,atlantico2026ussd}. Como 13\% dos participantes do piloto angolano reportaram interrupções por queda de conexão, a missão passa a perguntar pelo banco e pela operadora \emph{antes} de instruir o pagamento, para não emitir uma referência que o aprendiz não conseguirá pagar quando a conexão cair.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Combinado o valor com o credor, ele vai gerar uma referência: entidade, referência e montante. Atenção ao prazo --- a referência de valor fixo costuma caducar em 72 horas, e depois disso é preciso pedir outra. Antes de pedirmos a referência, diga-me duas coisas: em que banco tem conta e qual é a sua operadora. Se ficar sem internet, o \texttt{*400\#} ou o \texttt{*477\#} resolvem; o Multicaixa Express, não.''
+
+Sobre as obrigações de \textit{kixikila}, a missão é explícita quanto ao limite: não são renegociáveis no mesmo sentido, por serem regidas por confiança e por direito costumeiro; a fonte verificada registra, aliás, a falibilidade desses arranjos em ambientes de grande instabilidade económica e social~\cite{carlos2014kixikila}.
+
+\item[(c)] \textbf{Portugal (proposta; não aplicada, e a menos especificada das doze variantes).} A verificação não confirmou, em Portugal, a existência de programa público de renegociação em massa análogo ao brasileiro, nem de cadastro de restrição com a função da negativação, nem do regime aplicável a contratos em incumprimento. Na ausência dessas verificações, a variante portuguesa da M5 limita-se hoje à substituição do canal de pagamento (referência Multibanco, com a mesma estrutura de entidade, referência e valor~\cite{sibs_multibanco}) e do léxico, sobre uma missão cuja estrutura permanece a brasileira. Este apêndice registra isso como lacuna, e não como variante concluída: especificar a M5 portuguesa exige verificar o regime português de incumprimento e de renegociação de crédito, tarefa que integra o trabalho restante.
+\end{enumerate}
+
+\noindent\textbf{Classificação.} A variante \textbf{angolana é adaptação de estrutura profunda}: altera objetivos, porque a meta deixa de ser a saída de um cadastro que não se verificou existir; métodos, pela janela de 72 horas, pela negociação direta e pela escolha de canal condicionada a banco e operadora; e contexto, pela conectividade intermitente. A variante \textbf{portuguesa é adaptação de superfície, e de superfície incompleta}: troca canal e vocabulário sem que a estrutura da missão tenha sido examinada contra o ordenamento e as instituições portuguesas.
+
+\section*{M6 --- Pesquisa de Preços}
+
+\noindent\textbf{Objetivo invariante.} Missão complementar. Pesquisar o preço de um item pretendido em fontes distintas, compartilhar os preços encontrados com a comunidade de aprendizes, consultar os preços compartilhados por outros e refletir sobre a economia obtida.
+
+\begin{enumerate}
+\item[(a)] \textbf{Brasil (referência; aplicada).} Fontes de pesquisa: aplicativos, sítios de comércio eletrônico e estabelecimentos físicos. A comparação incorpora a diferença entre preço à vista e preço parcelado. O compartilhamento pressupõe conexão estável.
+
+\item[(b)] \textbf{Angola (aplicada; é a variante angolana com registro documental de sessão neste documento).} Fontes de pesquisa: grande retalhista de eletrodomésticos, mercado popular e mercado eletrônico informal. É exatamente a estrutura registrada no excerto de sessão do Apêndice~\ref{apendice:exemplos_interacoes}, em que se comparam três preços do mesmo item [trecho de sessão omitido neste depósito] e o agente introduz a questão da garantia e da fatura. O que muda de fato: primeiro, o conjunto de locais e a inclusão do custo de garantia na comparação; segundo, e mais relevante, a validade temporal do preço compartilhado, pois com inflação homóloga de 12,42\% em março de 2026~\cite{ineangola2026ipcn} um preço coletado semanas antes não é comparável a um preço de hoje, e a fase de compartilhamento passa a exigir a data de coleta, ao passo que a fase de reflexão passa a ensinar essa caducidade; terceiro, a degradação de canal, já que compartilhar e consultar preços tem de continuar possível quando a conexão cai.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Bom, a senhora encontrou três preços. Antes de partilhar com os outros aprendizes, diga-me o dia em que viu cada um: preço do mês passado, com a inflação que temos, já não serve de comparação para ninguém. E o mais barato não é automaticamente o melhor --- vamos somar a garantia e a fatura ao preço.''
+
+\item[(c)] \textbf{Portugal (proposta; não aplicada).} Fontes de pesquisa: retalho e comércio eletrônico; pagamento por MB WAY ou por referência Multibanco~\cite{sibs_mbway,sibs_multibanco}. O elemento distintivo é fiscal: pedir a fatura com número de identificação fiscal converte parte do consumo em dedução à coleta de IRS, à razão de 15\% do IVA suportado em setores determinados, com limite global de 250 euros por agregado familiar~\cite{at2026efatura}. A comparação de preços passa, assim, a admitir um termo de retorno fiscal, que a missão instrui o aprendiz a considerar.
+
+\noindent\textit{Enunciado ao aprendiz:} ``Comparou três preços --- falta um passo. Peça sempre a fatura com NIF: parte do IVA volta na dedução do IRS, até ao limite do agregado. O preço mais baixo e o custo mais baixo podem não ser o mesmo.''
+\end{enumerate}
+
+\noindent\textbf{Classificação.} Esta é a missão em que o instrumento produz o veredito menos lisonjeiro, e ele é registrado como tal. As \textbf{variantes angolana e portuguesa são ambas adaptação de superfície}: mudam os locais, os nomes das lojas, os canais e, no caso português, um termo de cálculo fiscal, mas o conceito (comparar preços reduz o custo da mesma compra), o objetivo (economizar no ato de compra) e o método (pesquisar, registrar, comparar e compartilhar) são idênticos nos três países. A exigência de datar o preço compartilhado, na variante angolana, é o único elemento que toca a estrutura profunda, por incorporar a inflação como força que determina a validade da informação; é, porém, ajuste de método dentro de um objetivo inalterado. Uma M6 de estrutura profunda para Angola exigiria reformular o próprio objetivo, de ``comparar preços'' para ``decidir o momento da compra sob inflação de dois dígitos'', e isso não foi feito. O registro é tanto mais necessário quanto a M6 é a missão de que se dispõe do único excerto angolano documentado, no qual a participante manifesta reconhecimento cultural [trecho de sessão omitido neste depósito] e atribui adequação cultural máxima. Segundo o próprio critério de Resnicow et al.~\cite{resnicow1999}, é exatamente isso que a estrutura de superfície produz: receptividade e aceitação. Aceitação não é saliência, e o indicador de adequação cultural percebida não deve, por isso, ser lido como medida da profundidade da adaptação.
+
+\section*{O que esta documentação revela}
+
+A Tabela~\ref{tab:variantes_veredito} consolida os vereditos. De doze variantes documentadas (seis angolanas e seis portuguesas, classificadas contra a variante brasileira de referência), cinco são adaptação de estrutura profunda e sete são adaptação de superfície. Duas entradas da tabela levam ressalva, e ambas estão nela assinaladas. A da M4 angolana é veredito de desenho, e não de observação, porque não há base observacional verificada sobre a composição do endividamento das famílias angolanas. A da M5 portuguesa é de superfície incompleta, porque o regime português de incumprimento e de renegociação de crédito não foi verificado e a estrutura da missão permanece a brasileira.
+
+\begin{table}[h!]
+\centering
+\small
+\caption{Vereditos por missão: dimensões do Modelo de Validade Ecológica efetivamente alteradas em cada variante e nível de adaptação resultante.}
+\label{tab:variantes_veredito}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllll}
+\hline
+\textbf{Missão} & \textbf{Angola: dimensões} & \textbf{Nível (AO)} & \textbf{Portugal: dimensões} & \textbf{Nível (PT)} \\
+\hline
+M1 & L, P, M, Cd, Cc, O, Mt, Cx & Profunda & L, Cd, Mt & Superfície \\
+M2 & L, P, M, Cd, Cc, O, Mt & Profunda & L, M, Cd & Superfície \\
+M3 & L, Cd, Cc, O, Mt, Cx & Profunda & L, Cd, Mt & Superfície \\
+M4 & L, Cd, Cc, O, Mt & Profunda$^{*}$ & L, Cd & Superfície \\
+M5 & L, Cd, O, Mt, Cx & Profunda & L, Cd & Superfície$^{\dagger}$ \\
+M6 & L, Cd, Mt, Cx & Superfície & L, Cd & Superfície \\
+\hline
+\multicolumn{5}{p{0.92\textwidth}}{\footnotesize Dimensões, conforme Bernal, Bonilla e Bellido~\cite{bernal1995}: L, linguagem; P, pessoas; M, metáforas; Cd, conteúdo; Cc, conceitos; O, objetivos; Mt, métodos; Cx, contexto. Níveis conforme Resnicow et al.~\cite{resnicow1999}. $^{*}$Veredito de desenho e $^{\dagger}$superfície incompleta: ressalvas no texto acima.} \\
+\hline
+\end{tabular}
+
+{\footnotesize Fonte: elaborado pelo autor.}
+\end{table}
+
+\noindent\textbf{Onde a adaptação é profunda, e por quê.} As cinco variantes de estrutura profunda são todas angolanas (M1 a M5) e têm uma causa comum, que é mensurável: a informalidade atinge 79,8\% dos ocupados em Angola~\cite{ineangola2024emprego}, contra 37,4\% no Brasil~\cite{ibge2026pnad}, mais do que o dobro, e chega a 83,9\% em Benguela, uma das duas cidades do piloto. Dessa diferença decorrem, em cadeia, todas as reformulações documentadas: renda diária em lugar de renda mensal, ausência de desconto em folha, poupança que é simultaneamente crédito e que admite sujeito coletivo, obrigações cuja prioridade não se decide por taxa, e canais de pagamento que precisam funcionar sem internet. Some-se a inflação de dois dígitos, que torna falso o pressuposto de estabilidade do valor nominal ao longo do horizonte de um plano. Nos termos de Barrera e Castro~\cite{barrera2006}, a adaptação angolana justifica-se por falha de equivalência de teoria conceitual (os determinantes do comportamento financeiro são outros), e não apenas por falha de engajamento, que a mera tradução resolveria. É essa a forma defensável da afirmação central da tese, e ela está demonstrada para Angola.
+
+\noindent\textbf{Onde a adaptação é de superfície, e o que isso significa.} As seis variantes portuguesas e a variante angolana da M6 alteram linguagem, conteúdo e, em alguns casos, um passo de método, sem alterar o modelo causal das missões. A variante portuguesa é, hoje, tradução qualificada: substitui instrumentos por correspondentes corretos (e a correção é real, pois os Certificados de Aforro correspondem ao Tesouro Direto, a referência Multibanco corresponde ao boleto, e a equivalência entre MB WAY e Pix seria falsa, dado que o Pix é arranjo instituído e regulado pelo banco central ao passo que o MB WAY é produto de operador privado), mas conserva o sujeito individual, o horizonte longo, a renda formal previsível e a sequência pedagógica do desenho brasileiro. Isso não é defeito de execução: é o resultado esperado quando os determinantes do comportamento financeiro nos dois contextos são, de fato, próximos. Declará-lo é mais forte do que reivindicar profundidade em tudo, porque a reivindicação uniforme seria refutada pela primeira leitura atenta das variantes.
+
+\noindent\textbf{O que falta.} Cinco itens delimitam o trabalho restante, e todos decorrem do que este apêndice documentou.
+
+\begin{enumerate}
+\item[(a)] \textbf{Piloto português.} Nenhuma variante portuguesa foi aplicada a aprendizes. Enquanto isso não ocorrer, a afirmação sobre Portugal permanece afirmação sobre desenho e sobre \textit{corpus}.
+
+\item[(b)] \textbf{Especificação da M5 portuguesa.} Depende de verificar o regime português de incumprimento e de renegociação de crédito, hoje ausente. É a lacuna mais concreta e a mais facilmente sanável.
+
+\item[(c)] \textbf{Candidatos a aprofundamento em Portugal.} Dois elementos verificados poderiam sustentar reformulação de estrutura profunda e ainda não foram explorados: a estrutura de catorze salários~\cite{ct2009}, que permitiria substituir o orçamento mensal por um orçamento anual com dois picos declarados, alterando o conceito e não apenas o cálculo; e a dominância do crédito à habitação em cerca de três quartos do \textit{stock} de empréstimos a particulares~\cite{leitao2025}, que permitiria reorganizar M3 e M4 em torno de um único passivo de longo prazo, em lugar de uma carteira de dívidas curtas.
+
+\item[(d)] \textbf{Base observacional para a M4 angolana.} A composição do endividamento das famílias angolanas não foi obtida em fonte oficial acessível, e o veredito de profundidade daquela missão é, por isso, de desenho.
+
+\item[(e)] \textbf{Ensaio comparativo.} Nenhuma variante foi testada contra a versão não adaptada da mesma missão. Esse é o ensaio final no sentido de Barrera et al.~\cite{barrera2013}, e é também lacuna que a literatura registra em geral: não se localizou estudo que compare currículo de educação financeira adaptado contra não adaptado. Barrera, Berkel e Castro~\cite{barrera2017} acrescentam que as adaptações locais feitas na própria implementação e a sustentabilidade da intervenção adaptada seguem subdesenvolvidas na literatura, o que se aplica diretamente ao caso: as variantes aqui documentadas são de desenho, e o que os aplicadores de campo efetivamente fizeram com elas não foi registrado de forma sistemática.
+\end{enumerate}
+
+\noindent Uma última observação metodológica atravessa as seis missões. O sistema opera por narrativa e personagens, e a evidência disponível favorece esse formato: Berg e Zia~\cite{berg2017} mostraram, com desenho de encorajamento aleatório em torno de uma telenovela sul-africana, que mensagens financeiras incorporadas a narrativa culturalmente enraizada produzem mudança mensurável de comportamento, com mecanismo de recordação associado ao personagem principal. Isso corresponde às dimensões de metáforas, pessoas e métodos do modelo de Bernal, e à saliência de Resnicow. Mas a mesma correspondência impõe a cautela final deste apêndice: dessas três dimensões, as metáforas foram efetivamente reformuladas em apenas uma das variantes nacionais, a angolana. Reformular missões inteiras, no sentido que a tese reivindica, foi feito cinco vezes em doze, o que é contribuição real e delimitada, e não propriedade geral do sistema.
+
+\section*{Uso da classificação pelo módulo de DRL}
+\label{sec:variantes_fcult}
+
+A classificação consolidada na Tabela~\ref{tab:variantes_veredito} não permanece confinada a este apêndice: é dela que se deriva a função de adequação cultural $f_{\text{cult}}$ empregada pela função de recompensa do agente de DRL (Equação~\ref{eq:f_cult} e Tabela~\ref{tab:fcult} do Capítulo~\ref{cap:proposta}). A regra de derivação é direta e não introduz parâmetro novo: a cada par (país, missão) atribui-se 1,0 quando a variante nacional foi aqui classificada como adaptação de estrutura profunda, e 0,5 quando a adaptação disponível é de superfície; ao Brasil atribui-se 1,0 em todas as missões, por ser o contexto de referência contra o qual as demais variantes se classificam. Resultam daí as três linhas da Tabela~\ref{tab:fcult}: Brasil uniformemente 1,0; Angola 1,0 em M1, M2 e M3 e 0,5 em M6, cuja variante é de superfície; Portugal 0,5 em todas, por serem de superfície as seis variantes portuguesas. As missões M4 e M5, condicionais, não integram o espaço de 17 ações do agente e não têm, por isso, contraparte na função.
+
+Esse encadeamento tem uma consequência que convém explicitar: os valores de $f_{\text{cult}}$ não são estipulações do modelo, e sim leituras de uma classificação documentada dimensão a dimensão e auditável contra o texto acima. Ele tem também um limite correspondente: a função herda tudo o que a classificação tem de provisório (em particular o veredito de desenho da M4 angolana, sem base observacional verificada, e o caráter incompleto da adaptação portuguesa da M5), e mede a \emph{disponibilidade} de conteúdo adaptado, não a sua eficácia junto ao aprendiz. O teste dessa função no módulo de DRL, e o seu resultado, constam da Subseção~\ref{sec:q_cultural}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
