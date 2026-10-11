@@ -1,0 +1,19 @@
+{
+  "model": "ViT-B-32",
+  "pretrained": "laion2b_s34b_b79k",
+  "rank": 4,
+  "alpha": 8.0,
+  "epochs_trained": 20,
+  "best_val_loss": 1.2190430834889412,
+  "baseline_val_loss": 2.2690322399139404,
+  "baseline_val_sim": 0.691453255712986,
+  "final_val_sim": 0.4495537653565407,
+  "trainable_params": 557056,
+  "total_params": 151572225,
+  "train_pairs": 1426,
+  "val_pairs": 233,
+  "temperature": 0.07,
+  "lr": 0.0001,
+  "batch_size": 32,
+  "seed": 42
+}
