@@ -41,6 +41,10 @@ plt.rcParams.update({
     "legend.fontsize": 8.5, "axes.grid": True, "grid.alpha": 0.25, "grid.linewidth": 0.5,
     "axes.spines.top": False, "axes.spines.right": False, "axes.edgecolor": "#555555",
     "pdf.fonttype": 42,
+    # A matemática do mathtext usa DejaVu Sans por padrão; sem isto, subscritos
+    # como o "reg" de λ_reg saíam sem serifa no meio de rótulos em Times.
+    "mathtext.fontset": "custom", "mathtext.rm": "Times New Roman",
+    "mathtext.it": "Times New Roman:italic", "mathtext.bf": "Times New Roman:bold",
 })
 VIRGULA = FuncFormatter(lambda v, _: ("%g" % round(v, 3)).replace(".", ","))
 POL = [("seq", "Regra\nsequencial"), ("bc", "BC"), ("dqn0", "DQN\nλ = 0"), ("dqn_lstar", "DQN\nλ*"), ("dqn_l1se", "DQN\nλ$_{1EP}$"),

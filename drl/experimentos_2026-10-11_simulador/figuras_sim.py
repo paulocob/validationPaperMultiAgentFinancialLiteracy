@@ -38,6 +38,9 @@ plt.rcParams.update({
     "font.size": 9, "axes.labelsize": 9, "xtick.labelsize": 8.5, "ytick.labelsize": 8.5, "legend.fontsize": 8.5,
     "axes.grid": True, "grid.alpha": 0.25, "grid.linewidth": 0.5, "axes.spines.top": False,
     "axes.spines.right": False, "axes.edgecolor": "#555555", "pdf.fonttype": 42,
+    # Mesma matemática em Times das figuras de DRL (o padrão do mathtext é sem serifa).
+    "mathtext.fontset": "custom", "mathtext.rm": "Times New Roman",
+    "mathtext.it": "Times New Roman:italic", "mathtext.bf": "Times New Roman:bold",
 })
 VIRG = FuncFormatter(lambda v, _: ("%g" % round(v, 3)).replace(".", ","))
 CURTO = {
