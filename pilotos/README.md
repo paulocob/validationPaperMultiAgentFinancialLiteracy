@@ -17,7 +17,7 @@ Tese: cap. 4, seção `sec:q_pilotos` (Tabelas `tab:q_brasil_controle` e `tab:q_
 ## O que não está aqui, e por quê
 
 - **Nenhum dado individual.** Não há respostas individuais, escores individuais, transcrições de sessões, áudios, nomes, contatos ou qualquer outro dado de participante. As respostas individuais do questionário de percepção e os escores individuais do teste de conhecimento **não foram preservados** (tese, seção `subsec:disponibilidade`); a análise original guardou só médias e percentuais.
-- Os excertos pseudonimizados de sessões (Apêndice G da tese) e os documentos do comitê de ética e do TCLE também ficam fora.
+- Os excertos pseudonimizados de sessões (apêndice de exemplos de interações, Apêndice B da tese) e os documentos do comitê de ética e do TCLE também ficam fora.
 - Os valores de U, dos intervalos e do α de Cronbach são os da análise original e não podem ser recalculados a partir deste depósito.
 
 ## Retificação do artigo CSEDU 2026

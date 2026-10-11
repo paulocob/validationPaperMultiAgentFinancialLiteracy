@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Apêndices da qualificação depositados no repositório de artefatos.
+%%
+%% Os apêndices A a E saíram do documento de qualificação, que mantém apenas a
+%% publicação decorrente do trabalho e os exemplos de interações. O texto fica
+%% em apendices_repositorio_corpo.tex e é publicado, junto com o PDF, na pasta
+%% apendices/ de https://github.com/paulocob/validationPaperMultiAgentFinancialLiteracy
+%%
+%% As remissões a seções, tabelas e equações da tese são resolvidas pelo pacote
+%% xr a partir de main_qualificacao.aux. Por isso, compile antes o documento
+%% principal e depois este:
+%%   latexmk -pdf main_qualificacao.tex
+%%   latexmk -pdf apendices_repositorio.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper]{report}
+\setcounter{secnumdepth}{3}
+\usepackage[english,portuges]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{xurl}
+\usepackage{xr}
+\externaldocument{main_qualificacao}
+\usepackage[numbers,sort&compress]{natbib}
+
+\addto\captionsportuges{%
+  \renewcommand{\contentsname}{Sumário}%
+  \renewcommand{\bibname}{Referências}%
+}
+
+% Mesma escolha do documento principal: identificadores longos em \texttt, como
+% o nome completo do modelo, não têm ponto de quebra e estouravam a margem.
+\sloppy
+
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  {\large Universidade Federal de Campina Grande\\
+  Programa de Pós-Graduação em Ciência da Computação\par}
+  \vspace{3cm}
+  {\Large\bfseries Sistema Multi-Agente com IA Generativa e Aprendizado por Reforço Profundo para Educação Financeira Transcultural em Países Lusófonos\par}
+  \vspace{1cm}
+  {\large Apêndices da Qualificação de Doutorado\par}
+  \vspace{2cm}
+  {\large Paulo César Oliveira Brito\par}
+  \vspace{0.5cm}
+  {Orientador: José Antão Beltrão Moura\par}
+  \vfill
+  \begin{minipage}{0.9\textwidth}
+    \small
+    Este documento reúne os apêndices A a E da qualificação, depositados no repositório de validação e replicabilidade \url{https://github.com/paulocob/validationPaperMultiAgentFinancialLiteracy}. As remissões a capítulos, seções, tabelas e equações que não pertencem a estes apêndices referem-se ao documento de qualificação, com a numeração dele.
+  \end{minipage}
+  \vspace{1cm}
+
+  {Campina Grande, 2026\par}
+\end{titlepage}
+
+\tableofcontents
+
+\appendix
+\input{apendices_repositorio_corpo}
+
+\bibliographystyle{unsrtnat}
+\bibliography{ref}
+
+\end{document}

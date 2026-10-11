@@ -4,10 +4,10 @@ Código, dados sintéticos e resultados dos experimentos de DRL da tese. Origem:
 
 | Caminho | Conteúdo | Tese |
 |---|---|---|
-| `data/` | Conjunto sintético: `interactions.jsonl` (2.000 transições), `users.jsonl` (25 perfis simulados), `tasks.json` (catálogo de tarefas), `splits.json` (partição original por interação, 1.581/206/213) | Cap. 3, seção de abordagem metodológica; Apêndice E, “Características do conjunto sintético” |
-| `experimentos_2026-10-10/` | **Reexecução corrigida** (partição por perfil, validação cruzada de 5 *folds*, seleção de λ_reg na validação, avaliação *off-policy* SNIS/DR, experimento cultural). `run_all.py` reproduz tudo; `RESULTADOS.md` e `resultados.json` são as saídas usadas na tese | Cap. 4, seções `sec:q_drl`, `sec:q_regularizacao`, `sec:q_cultural`; Apêndice E, “Reprodutibilidade” |
-| `experimentos_2026-10-11_simulador/` | Simulador cognitivo (BKT estendido), comparação de políticas, sensibilidade e rodadas do planejador LLM (`rodadas_h05/`, `rodadas_h1/`) | Cap. 4, `sec:q_simulador`; Apêndice E, “Simulador Cognitivo” |
-| `experimentos_2026-08-29/` | Primeira execução (agosto de 2026), preservada **sem alteração** para auditoria. Tem os quatro problemas descritos na “Nota histórica” do Apêndice E; os números dela **não** são resultados da tese | Apêndice E, “Nota histórica: a primeira execução” |
+| `data/` | Conjunto sintético: `interactions.jsonl` (2.000 transições), `users.jsonl` (25 perfis simulados), `tasks.json` (catálogo de tarefas), `splits.json` (partição original por interação, 1.581/206/213) | Cap. 3, seção de abordagem metodológica; Apêndice E de `apendices/`, “Características do conjunto sintético” |
+| `experimentos_2026-10-10/` | **Reexecução corrigida** (partição por perfil, validação cruzada de 5 *folds*, seleção de λ_reg na validação, avaliação *off-policy* SNIS/DR, experimento cultural). `run_all.py` reproduz tudo; `RESULTADOS.md` e `resultados.json` são as saídas usadas na tese | Cap. 4, seções `sec:q_drl`, `sec:q_regularizacao`, `sec:q_cultural`; Apêndice E de `apendices/`, “Reprodutibilidade” |
+| `experimentos_2026-10-11_simulador/` | Simulador cognitivo (BKT estendido), comparação de políticas, sensibilidade e rodadas do planejador LLM (`rodadas_h05/`, `rodadas_h1/`) | Cap. 4, `sec:q_simulador`; Apêndice E de `apendices/`, “Simulador Cognitivo” |
+| `experimentos_2026-08-29/` | Primeira execução (agosto de 2026), preservada **sem alteração** para auditoria. Tem os quatro problemas descritos na “Nota histórica” do Apêndice E de `apendices/`; os números dela **não** são resultados da tese | Apêndice E de `apendices/`, “Nota histórica: a primeira execução” |
 | `train_*.py`, `eval_*.py`, `train_utils.py`, `pipeline.py`, `cv_pipeline.py`, `hparam_search.py`, `EXPERIMENTS.md`, `README_pipeline_original.md` | *Pipeline* original (jan.–ago. 2026). `train_utils.py` é importado pela reexecução de 10/10 (codificador de estado) | Histórico |
 
 ## Como reproduzir

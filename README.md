@@ -9,14 +9,15 @@ Repositório citado na tese de doutorado *Sistema Multi-Agente com IA Generativa
 | Pasta | O que contém | Onde a tese usa |
 |---|---|---|
 | [`revisao/`](revisao/) | As 60 *strings* de busca (CSV e LaTeX) e o protocolo resumido | Cap. 2, Protocolo Metodológico da Revisão |
-| [`missoes/`](missoes/) | Estrutura das seis missões e variantes culturais (Brasil, Angola, Portugal), com vereditos de adaptação e derivação de `f_cult` | Cap. 3; Apêndices C e D |
+| [`missoes/`](missoes/) | Estrutura das seis missões e variantes culturais (Brasil, Angola, Portugal), com vereditos de adaptação e derivação de `f_cult` | Cap. 3; versão enxuta em `apendices/` (C e D) |
 | [`pseudocodigo/`](pseudocodigo/) | Pseudocódigo do *pipeline* multiagente, do cálculo da recompensa e da progressão das missões | Cap. 3 (agentes de PLN; função de recompensa) |
-| [`drl/`](drl/) | Conjunto sintético de 2.000 transições, código de treino e avaliação, reexecução corrigida (10/10/2026), simulador cognitivo e planejador LLM (11/10/2026), primeira execução preservada | Cap. 4, seções de DRL, regularização, componente cultural e simulador; Apêndice E |
+| [`drl/`](drl/) | Conjunto sintético de 2.000 transições, código de treino e avaliação, reexecução corrigida (10/10/2026), simulador cognitivo e planejador LLM (11/10/2026), primeira execução preservada | Cap. 4, seções de DRL, regularização, componente cultural e simulador; configurações em `apendices/` (E) |
 | [`rag/`](rag/) | Corpus FinEduBench-Luso (999 pares), código de avaliação do RAG, adaptador LoRA do recuperador e resultados | Cap. 4, RAG multimodal e auditoria de equidade |
 | [`fala/`](fala/) | Configuração, composição dos dados e resultados do classificador de 17 variantes; modelo do manifesto dos clipes | Cap. 4, Identificação de Variantes Lusófonas por Fala |
 | [`experimentos_fronteira/`](experimentos_fronteira/) | Auditoria de equidade entre países (executada) e protocolos dos experimentos planejados do classificador de fala | Cap. 4, auditoria de equidade |
 | [`pilotos/`](pilotos/) | Resultados **agregados** dos pilotos do Brasil e de Angola (CSV) | Cap. 4, Validação Empírica com Usuários |
-| [`artigo/`](artigo/) | PDF do artigo CSEDU 2026 e as retificações registradas na tese | Apêndice F |
+| [`apendices/`](apendices/) | Apêndices A a E da qualificação (questionário, teste de conhecimento, missões, variantes e configurações de DRL e do simulador), em PDF e LaTeX | Caps. 3 e 4, em todas as remissões ao “repositório de artefatos (`apendices/`)” |
+| [`artigo/`](artigo/) | PDF do artigo CSEDU 2026 e as retificações registradas na tese | Apêndice A |
 
 ## Como reproduzir
 
@@ -48,7 +49,7 @@ Sementes: 42 a 46 (DRL, *split* fixo e classificador de fala), 42 (validação c
 | Código do sistema integrado (*backend* do tutor no WhatsApp) | Em integração com a política DQN regularizada | Depósito previsto na A12 (novembro de 2026) |
 | Programa gerador do conjunto sintético original | Não foi preservado | Irrecuperável; o simulador cognitivo (`drl/experimentos_2026-10-11_simulador/`) gera trajetórias novas |
 | Respostas individuais do questionário de percepção e escores individuais do teste de conhecimento dos pilotos | Não foram preservados; a análise guardou só médias e percentuais | Irrecuperável; agregados em `pilotos/` |
-| Interações, transcrições, áudios e qualquer dado pessoal dos participantes; documentos do comitê de ética e TCLE; excertos pseudonimizados do Apêndice G | Proteção de dados (LGPD) e termos do consentimento | Não serão depositados |
+| Interações, transcrições, áudios e qualquer dado pessoal dos participantes; documentos do comitê de ética e TCLE; excertos pseudonimizados do apêndice de exemplos de interações (Apêndice B da tese) | Proteção de dados (LGPD) e termos do consentimento | Não serão depositados |
 | Áudio do conjunto de fala (Common Voice e telejornais) | Direitos de terceiros; uso só para pesquisa não comercial | Não será depositado; ver o manifesto em `fala/` |
 | Código, regras *regex*, predições e manifesto por clipe do classificador de fala | Ficam no repositório `sbrt2026-lusophone-variants`, não localizado nesta montagem | Pendente (A12) |
 | Pesos do classificador de variantes (~380 MB) | Acima do limite de 50 MB por arquivo | Disponíveis mediante solicitação; a depositar em *release* ou no Zenodo |
