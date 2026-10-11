@@ -1,0 +1,76 @@
+07:53:07 (1) calibra√ß√£o
+07:53:41 [calibra√ß√£o] rodada 1: c_T = 0.6660, alfa = 0.0111; curr√≠culo h=0,5: Hake 0.508; h=1: abandono 0.150
+07:54:16 [calibra√ß√£o] rodada 2: c_T = 0.6586, alfa = 0.0108; curr√≠culo h=0,5: Hake 0.500; h=1: abandono 0.150
+07:54:50 [calibra√ß√£o] rodada 3: c_T = 0.6586, alfa = 0.0108; curr√≠culo h=0,5: Hake 0.500; h=1: abandono 0.150
+07:54:52 (2) teste de sanidade
+07:54:52 [sanidade] h=0.0: curr√≠culo 0.541, aleat√≥ria 0.289, or√°culo 0.541
+07:54:53 [sanidade] h=0.5: curr√≠culo 0.502, aleat√≥ria 0.283, or√°culo 0.542
+07:54:53 [sanidade] h=1.0: curr√≠culo 0.436, aleat√≥ria 0.259, or√°culo 0.526
+07:54:53 (3) trabalhos (h, semente) em paralelo
+08:05:49   h=0.5 s=2 conclu√≠do em 646 s (Œª_1EP=1.0, Œª_SNIS=0.0)
+08:06:35   h=1.0 s=1 conclu√≠do em 693 s (Œª_1EP=5.0, Œª_SNIS=0.01)
+08:06:45   h=1.0 s=0 conclu√≠do em 702 s (Œª_1EP=5.0, Œª_SNIS=0.0)
+08:06:50   h=1.0 s=3 conclu√≠do em 708 s (Œª_1EP=5.0, Œª_SNIS=0.01)
+08:07:25   h=0.0 s=3 conclu√≠do em 742 s (Œª_1EP=5.0, Œª_SNIS=0.0)
+08:07:44   h=1.0 s=2 conclu√≠do em 762 s (Œª_1EP=1.0, Œª_SNIS=0.01)
+08:07:54   h=0.5 s=0 conclu√≠do em 771 s (Œª_1EP=1.0, Œª_SNIS=0.0)
+08:08:04   h=0.5 s=1 conclu√≠do em 781 s (Œª_1EP=1.0, Œª_SNIS=0.01)
+08:08:06   h=1.0 s=4 conclu√≠do em 784 s (Œª_1EP=5.0, Œª_SNIS=0.01)
+08:08:13   h=0.5 s=4 conclu√≠do em 791 s (Œª_1EP=1.0, Œª_SNIS=0.01)
+08:08:15   h=0.0 s=0 conclu√≠do em 792 s (Œª_1EP=1.0, Œª_SNIS=0.01)
+08:08:15   h=0.5 s=3 conclu√≠do em 792 s (Œª_1EP=5.0, Œª_SNIS=0.01)
+08:08:20   h=0.0 s=1 conclu√≠do em 797 s (Œª_1EP=5.0, Œª_SNIS=0.01)
+08:08:27   h=0.0 s=2 conclu√≠do em 805 s (Œª_1EP=1.0, Œª_SNIS=0.01)
+08:08:39   h=0.0 s=4 conclu√≠do em 816 s (Œª_1EP=1.0, Œª_SNIS=0.01)
+08:08:40 (4) planejador LLM
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/main/config.json
+08:09:36 [llm] falha ao carregar Qwen/Qwen2.5-1.5B-Instruct: Qwen/Qwen2.5-1.5B-Instruct: OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 1s [Retry 1/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 2s [Retry 2/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 4s [Retry 3/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 4/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+Retrying in 8s [Retry 5/5].
+'[WinError 10013] Foi feita uma tentativa de acesso a um soquete de uma maneira que È proibida pelas permissıes de acesso' thrown while requesting HEAD https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/main/config.json
+08:10:23 [llm] falha ao carregar Qwen/Qwen2.5-0.5B-Instruct: Qwen/Qwen2.5-0.5B-Instruct: OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+08:10:23 (5) agrega√ß√£o
+08:10:38 (6) figuras e relat√≥rio
+[figuras] em <raiz-da-tese>\Qualifica√ß√£o de Doutorado - Vers√£o Enxuta\figures
+[relat√≥rio] <raiz-da-tese>\Artigo DRL\treino_DRL\experimentos_2026-10-11_simulador\RESULTADOS.md
+08:10:41 fim: 17.5 min

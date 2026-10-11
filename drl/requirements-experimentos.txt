@@ -1,0 +1,7 @@
+# Versões usadas nas reexecuções de 10/10/2026 e 11/10/2026 (Python 3.12.10, CPU).
+numpy==2.5.3
+scipy==1.18.1
+torch==2.14.1
+matplotlib==3.11.2
+# Opcional: só para planejador_llm.py com modelo local (Qwen2.5); não usado nas rodadas publicadas.
+# transformers==5.19.0

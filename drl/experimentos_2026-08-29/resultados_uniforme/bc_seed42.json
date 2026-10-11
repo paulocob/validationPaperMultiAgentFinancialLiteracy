@@ -1,0 +1,1 @@
+{"dataset_size": 213, "action_accuracy": 0.9014084507042254, "avg_reward": 0.4908544826955303, "avg_matched_reward": 0.5184739679098129, "avg_action_prob": 0.8400244914310079, "device": "cpu", "primary_metric": "top3_accuracy", "primary_value": 1.0, "top1_accuracy": 0.9014084507042254, "top3_accuracy": 1.0, "top5_accuracy": 1.0, "alg": "bc", "seed": 42}

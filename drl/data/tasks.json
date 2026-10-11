@@ -1,0 +1,143 @@
+{
+  "tasks": [
+    {
+      "task_id": "M1_RaioX_introducao",
+      "mission_id": "M1_RaioX",
+      "name": "Introducao ao Raio-X",
+      "type": "reflexao",
+      "points": 25,
+      "prerequisites": [],
+      "next_tasks": [
+        "M1_RaioX_custos_fixos"
+      ]
+    },
+    {
+      "task_id": "M1_RaioX_custos_fixos",
+      "mission_id": "M1_RaioX",
+      "name": "Custos Fixos",
+      "type": "acao",
+      "points": 75,
+      "prerequisites": [
+        "M1_RaioX_introducao"
+      ],
+      "next_tasks": [
+        "M1_RaioX_gastos_variaveis"
+      ]
+    },
+    {
+      "task_id": "M1_RaioX_gastos_variaveis",
+      "mission_id": "M1_RaioX",
+      "name": "Gastos Variaveis",
+      "type": "acao",
+      "points": 75,
+      "prerequisites": [
+        "M1_RaioX_custos_fixos"
+      ],
+      "next_tasks": [
+        "M1_RaioX_informar_renda"
+      ]
+    },
+    {
+      "task_id": "M1_RaioX_informar_renda",
+      "mission_id": "M1_RaioX",
+      "name": "Informar Renda",
+      "type": "acao",
+      "points": 75,
+      "prerequisites": [
+        "M1_RaioX_gastos_variaveis"
+      ],
+      "next_tasks": [
+        "M1_RaioX_reflexao_resultado"
+      ]
+    },
+    {
+      "task_id": "M1_RaioX_reflexao_resultado",
+      "mission_id": "M1_RaioX",
+      "name": "Reflexao do Resultado",
+      "type": "reflexao",
+      "points": 25,
+      "prerequisites": [
+        "M1_RaioX_informar_renda"
+      ],
+      "next_tasks": [
+        "M2_Compra_inteligente_introducao"
+      ]
+    },
+    {
+      "task_id": "M2_Compra_inteligente_introducao",
+      "mission_id": "M2_Compra_Inteligente",
+      "name": "Introducao Compra Inteligente",
+      "type": "reflexao",
+      "points": 25,
+      "prerequisites": [
+        "M1_RaioX_reflexao_resultado"
+      ],
+      "next_tasks": [
+        "M2_Compra_inteligente_decisao"
+      ]
+    },
+    {
+      "task_id": "M2_Compra_inteligente_decisao",
+      "mission_id": "M2_Compra_Inteligente",
+      "name": "Decisao de Compra",
+      "type": "acao",
+      "points": 75,
+      "prerequisites": [
+        "M2_Compra_inteligente_introducao"
+      ],
+      "next_tasks": [
+        "M3_Plano_acao_introducao"
+      ]
+    },
+    {
+      "task_id": "M3_Plano_acao_introducao",
+      "mission_id": "M3_Plano_Acao",
+      "name": "Introducao Plano de Acao",
+      "type": "reflexao",
+      "points": 25,
+      "prerequisites": [
+        "M2_Compra_inteligente_decisao"
+      ],
+      "next_tasks": [
+        "M3_Plano_acao_definir_objetivo"
+      ]
+    },
+    {
+      "task_id": "M3_Plano_acao_definir_objetivo",
+      "mission_id": "M3_Plano_Acao",
+      "name": "Definir Objetivo",
+      "type": "acao",
+      "points": 75,
+      "prerequisites": [
+        "M3_Plano_acao_introducao"
+      ],
+      "next_tasks": [
+        "M6_Pesquisa_precos_introducao"
+      ]
+    },
+    {
+      "task_id": "M6_Pesquisa_precos_introducao",
+      "mission_id": "M6_Pesquisa_Precos",
+      "name": "Introducao Pesquisa de Precos",
+      "type": "reflexao",
+      "points": 25,
+      "prerequisites": [
+        "M3_Plano_acao_definir_objetivo"
+      ],
+      "next_tasks": [
+        "M6_Pesquisa_precos_pratica"
+      ]
+    },
+    {
+      "task_id": "M6_Pesquisa_precos_pratica",
+      "mission_id": "M6_Pesquisa_Precos",
+      "name": "Pesquisa de Precos na Pratica",
+      "type": "acao",
+      "points": 75,
+      "prerequisites": [
+        "M6_Pesquisa_precos_introducao"
+      ],
+      "next_tasks": []
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+ "h": 0.5,
+ "n": 200,
+ "seed": 42,
+ "passos": 15,
+ "decisoes": 2905,
+ "invalidas": 0,
+ "frac_invalidas": 0.0,
+ "invalidas_por_rodada": [
+  {
+   "rodada": 0,
+   "ativos": 200,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 1,
+   "ativos": 198,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 2,
+   "ativos": 197,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 3,
+   "ativos": 197,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 4,
+   "ativos": 196,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 5,
+   "ativos": 195,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 6,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 7,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 8,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 9,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 10,
+   "ativos": 192,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 11,
+   "ativos": 191,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 12,
+   "ativos": 191,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 13,
+   "ativos": 189,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 14,
+   "ativos": 187,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  }
+ ],
+ "llm": {
+  "hake": 0.4873853566416165,
+  "hake_ic": [
+   0.47056569137401333,
+   0.502740435828917
+  ],
+  "hake_ret": 0.35950293097265373,
+  "hake_ret_ic": [
+   0.3466743067299509,
+   0.37183006845106126
+  ],
+  "abandono": 0.075,
+  "abandono_ic": [
+   0.04,
+   0.11
+  ],
+  "diverg": 0.3421686746987952
+ },
+ "curriculo": {
+  "hake": 0.4957736398371775,
+  "hake_ret": 0.3656028397642158,
+  "abandono": 0.08
+ },
+ "vs_curriculo": {
+  "dif_hake": -0.008388283195560977,
+  "dif_hake_ic": [
+   -0.0179608026627721,
+   0.0009453977132000335
+  ],
+  "dif_hake_ret": -0.0060999087915620965,
+  "dif_hake_ret_ic": [
+   -0.01260252290413435,
+   0.000880912897461938
+  ],
+  "dif_abandono": -0.005,
+  "d_cohen": -0.06680349482291792
+ },
+ "nota": "Diferença pareada nos mesmos aprendizes e números aleatórios comuns; IC por bootstrap de aprendizes."
+}

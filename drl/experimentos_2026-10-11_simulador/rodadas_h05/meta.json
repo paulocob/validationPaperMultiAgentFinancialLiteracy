@@ -1,0 +1,100 @@
+{
+ "h": 0.5,
+ "n": 200,
+ "seed": 42,
+ "k": 15,
+ "invalidas": 0,
+ "decisoes": 2905,
+ "invalidas_por_rodada": [
+  {
+   "rodada": 0,
+   "ativos": 200,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 1,
+   "ativos": 198,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 2,
+   "ativos": 197,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 3,
+   "ativos": 197,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 4,
+   "ativos": 196,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 5,
+   "ativos": 195,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 6,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 7,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 8,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 9,
+   "ativos": 193,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 10,
+   "ativos": 192,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 11,
+   "ativos": 191,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 12,
+   "ativos": 191,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 13,
+   "ativos": 189,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  },
+  {
+   "rodada": 14,
+   "ativos": 187,
+   "invalidas": 0,
+   "ids_extras_ignorados": 0
+  }
+ ]
+}
